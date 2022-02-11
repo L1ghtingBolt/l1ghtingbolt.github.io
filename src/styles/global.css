@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    animation: objectDown .4s forwards;
+}
+
+.headerImg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: objectShift .4s forwards;
+}
+
+.headerImg::before {
+    content: "";
+    z-index: -1;
+    background: url('/assets/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: -10px;
+    inset: 0;
+    filter: blur(4px);
+}
+
+.wrapper {
+    border: 5px solid white;
+    padding: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #0008;
+}
+
+#projects li {
+    border: 5px solid #0002;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    #projects li {
+        border: 5px solid #fff2;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 80vw;
+        text-align: center;
+        height: max-content;
+        font-size: 2rem !important;
+        padding: 0;
+        margin: 0;
+    }
+}
+  
+
+@keyframes objectShift {
+    0% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: inherit;
+    }
+}
+
+@keyframes objectDown {
+    0% {
+        margin-bottom: -10px;
+    }
+    100% {
+        margin-top: inherit;
+    }
+}
