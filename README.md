@@ -2,5 +2,5 @@
 http://l1ghtingbolt.surge.sh
 
 ## TODO:
-[ ] Rename repo
-[x] Projects page
+- [] Rename repo  
+- [x] Projects page
