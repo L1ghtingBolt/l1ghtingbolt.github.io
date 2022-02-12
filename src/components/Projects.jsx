@@ -13,7 +13,7 @@ export default function Projects(props) {
                 <a target="_blank" href="https://jsbattle.vercel.app/"><li>JSBattle</li></a>
                 <a target="_blank" href="https://l1ghtinglibraries.vercel.app/"><li>L1ghtingLibraries</li></a>
                 <a target="_blank" href="https://www.npmjs.com/package/fakefakerjs"><li>Fakefaker.JS</li></a>
-                <a target="_blank" href="https://github.com/L1ghtingBolt"><li className="bg-blue-600">Other Projects</li></a>
+                <a target="_blank" href="https://github.com/L1ghtingBolt"><li className="bg-blue-600 text-white">Other Projects</li></a>
             </ul>
         </section>
     )

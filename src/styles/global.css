@@ -54,11 +54,7 @@ nav {
     padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-    #projects li {
-        border: 5px solid #fff2;
-    }
-}
+
 
 @media (max-width: 500px) {
     .wrapper {
@@ -88,4 +84,15 @@ nav {
     100% {
         margin-top: inherit;
     }
+}
+
+.a {
+    @apply mt-10 dark:bg-slate-400 dark:text-black px-5 py-2 font-bold rounded-md 
+    dark:hover:bg-slate-700 dark:hover:text-white transition-colors
+    bg-slate-200 hover:bg-slate-400;
+}
+
+.library {
+    padding: 5px;
+    text-decoration: underline;
 }

@@ -1,0 +1,31 @@
+---
+import Nav from '../components/Nav.jsx';
+const {content} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			rel="stylesheet"
+			href={Astro.resolve("../styles/global.css")}
+		>
+		<title>{content.title} | Gerardo</title>
+		<style global>
+			@import '../styles/global.css';
+		</style>
+	</head>
+
+	<body class="dark:bg-slate-900 bg-white text-black dark:text-white">
+        <Nav/>
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl underline decoration-orange-500 text-center m-5 font-semibold">{content.title}</h1>
+            <p class="text-center italic text-gray-400">{content.desc}</p>
+            <br/>
+            <p>
+                <slot/>
+            </p>
+        </div>
+    </body>
+</html>
